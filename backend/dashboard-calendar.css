@@ -1,0 +1,14 @@
+﻿/* dashboard-calendar.css */
+.rdp-present {
+  background-color: #d4ffd4 !important;
+  border-radius: 6px;
+}
+.rdp-absent {
+  background-color: #ffd4d4 !important;
+  border-radius: 6px;
+}
+
+/* selected day styling from react-day-picker */
+.rdp-day_selected, .rdp-day_selected:focus {
+  box-shadow: 0 0 0 3px rgba(13,110,253,0.12) !important;
+}
