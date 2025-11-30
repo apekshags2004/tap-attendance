@@ -12,10 +12,12 @@ import ManagerDashboard from "./pages/Manager/ManagerDashboard";
 import AllAttendance from "./pages/Manager/AllAttendance";
 
 import ProtectedRoute from "./components/ProtectedRoute";
+import Header from "./components/Header"; // <- NEW
 
 export default function App() {
   return (
     <BrowserRouter>
+      <Header /> {/* <-- global header rendered for every page */}
       <Routes>
         {/* Public */}
         <Route path="/login" element={<Login />} />
@@ -66,7 +68,7 @@ export default function App() {
         />
 
         {/* Fallback: simple not found route */}
-        <Route path="*" element={<div style={{padding:40}}>404 — Page not found</div>} />
+        <Route path="*" element={<div style={{ padding: 40 }}>404 — Page not found</div>} />
       </Routes>
     </BrowserRouter>
   );

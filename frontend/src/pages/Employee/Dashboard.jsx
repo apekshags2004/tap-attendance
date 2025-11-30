@@ -4,7 +4,11 @@ import axios from "../../api/axiosInstance";
 import { DayPicker } from "react-day-picker";
 import 'react-day-picker/dist/style.css';
 import "./dashboard-calendar.css";
-
+// near top of render return
+<div className="d-flex align-items-center mb-3">
+  <img src="/tap-attendance-logo.png" alt="TAP Attendance" style={{height:50, marginRight:12}} />
+  <h1 className="h4 mb-0">My Dashboard</h1>
+</div>
 export default function Dashboard() {
   const [summary, setSummary] = useState({
     year: new Date().getFullYear(),
